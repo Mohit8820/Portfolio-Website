@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import ScriptTag from "react-script-tag";
 
 function About() {
   return (
@@ -19,6 +20,11 @@ function About() {
             ></span>
             <span className="cursor" data-owner="main"></span>
           </h1>
+          <ScriptTag
+            type="text/javascript"
+            async
+            src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"
+          />
         </div>
         <Button
           className="btn"
