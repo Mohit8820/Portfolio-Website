@@ -6,19 +6,19 @@ import Typography from "@mui/material/Typography";
 
 const images = [
   {
-    url: "/Calculator.jpg",
+    url: "/images/Calculator.webp",
     title: "Calculator",
     width: "32%",
     link: "https://mohit8820.github.io/Calculator-1/",
   },
   {
-    url: "/Simon.jpg",
+    url: "/images/Simon.webp",
     title: "Simon-Game",
     width: "32%",
     link: "https://mohit8820.github.io/Simon-Game/",
   },
   {
-    url: "/todo.jpg",
+    url: "/images/todo.webp",
     title: "To-Do",
     width: "32%",
     link: "https://hitmo-todo-list.herokuapp.com/",
@@ -108,7 +108,7 @@ export default function Work() {
           margin: "auto",
           border: "1px solid #868e96",
           borderRadius: 3,
-          padding: 3,
+          padding: "2.5vw",
           justifyContent: "space-between",
         }}
       >

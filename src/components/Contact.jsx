@@ -12,8 +12,8 @@ function Contact() {
   return (
     <div id="contact">
       <h1>Contact</h1>
-      <Paper elevation={8} className="cont" sx={{ m: 0, p: "5vh" }}>
-        <img className="mIcon" src="/MohitIcon.jpg" alt="logo" />
+      <Paper elevation={8} className="cont" sx={{ m: 0, p: "5vw" }}>
+        <img className="mIcon" src="/images/MohitIcon.webp" alt="logo" />
         <div>
           <a href="https://www.facebook.com/mohit.sah.8820/">
             <FacebookIcon

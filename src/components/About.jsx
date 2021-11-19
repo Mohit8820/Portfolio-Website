@@ -39,12 +39,12 @@ function About() {
         </Button>
       </div>
       <div className="img-box">
-        <img className="trans front" src="/css.png" alt="" />
-        <img className="trans mohit" src="/MOHIT.png" alt="" />
+        <img className="trans front" src="/images/css.webp" alt="" />
+        <img className="trans mohit" src="/images/MOHIT.webp" alt="" />
 
-        <img className="trans back ijs" src="/js.png" alt="" />
-        <img className="trans back ihtml" src="/html.png" alt="" />
-        <img className="trans back icss" src="/cssback.png" alt="" />
+        <img className="trans back ijs" src="/images/js.webp" alt="" />
+        <img className="trans back ihtml" src="/images/html.webp" alt="" />
+        <img className="trans back icss" src="/images/cssback.webp" alt="" />
       </div>
     </div>
   );

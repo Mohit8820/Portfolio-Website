@@ -9,7 +9,7 @@ html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   background-image: linear-gradient(to right, #ffffff9a, #ffffff9a),
-    url("/130945-abstract-blue-and-white-polygon-triangle-background.jpg");
+    url("/images/130945-abstract-blue-and-white-polygon-triangle-background.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,8 +20,14 @@ html {
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
 }
+
 .trans {
   transition: 0.5s all;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 nav {
   display: flex;
@@ -29,7 +35,7 @@ nav {
   align-items: center;
   padding: 2.8rem;
   font-size: 1.8rem;
-  height: 12vh;
+  height: 15vh;
 }
 .icon {
   display: flex;
@@ -40,12 +46,46 @@ a:link,
 a:visited {
   text-decoration: none;
   color: #868e96;
-  padding-left: 6vw;
+  margin-left: 4vw;
   transition: 0.5s all;
 }
 a:active,
 a:hover {
   color: #1976d2;
+}
+.mern {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+}
+.mernLogo {
+  width: 20rem;
+  height: auto;
+  margin-top: 1rem;
+}
+.reactBound {
+  width: 4rem;
+  height: 4rem;
+  margin: 2vh 0 0 0;
+  z-index: 1;
+  position: absolute;
+  transform: translate(28%);
+}
+.react {
+  /* top: 20%;
+  left: 32%; */
+  width: 4rem;
+  animation: spin1 2s infinite linear;
+}
+@keyframes spin1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .intro {
@@ -53,7 +93,7 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   width: 85vw;
-  height: 90vh;
+  height: 85vh;
   margin: 0 auto;
 }
 .hello {
@@ -163,8 +203,20 @@ footer {
   p {
     padding-left: 3vw;
   }
-  .cont {
-    padding: 0;
+  .mern {
+    width: 15rem;
+  }
+  .mernLogo {
+    width: 15rem;
+  }
+  .reactBound {
+    width: 3rem;
+    height: 3rem;
+  }
+  .react {
+    /* top: 20%;
+    left: 32%; */
+    width: 3rem;
   }
 }
 /*590*/
@@ -174,10 +226,17 @@ footer {
   }
   nav {
     font-size: 1.2rem;
+    padding: 0 10%;
+    width: 100%;
+    height: 5vh;
+    margin-top: 2rem;
+    background-color: #d1f4ff;
+    justify-content: space-between;
   }
   .intro {
     flex-direction: column;
     width: 95vw;
+    height: 80vh;
   }
   .hello {
     width: 100%;
@@ -187,22 +246,21 @@ footer {
   }
   .typed {
     font-size: 4.2rem;
-    height: auto;
+    height: 30vh;
   }
   .img-box {
     width: 70%;
     margin: -30vh 0 0 0;
   }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    gap: 1rem;
+  }
+  .cont {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
-
-/*320px*/
-@media (max-width: 20em) {
-  .mIcon {
-    display: none;
-  }
-} /*
-@media (max-width: 46em) {
-  .h1 {
-    font-size: 10em;
-  }
-} */
