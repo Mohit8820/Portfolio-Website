@@ -74,8 +74,6 @@ a:hover {
   transform: translate(28%);
 }
 .react {
-  /* top: 20%;
-  left: 32%; */
   width: 4rem;
   animation: spin1 2s infinite linear;
 }
