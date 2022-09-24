@@ -154,9 +154,12 @@ h1 {
 }
 .work,
 #contact {
-  padding: 3% 7%;
+  padding: 0 7%;
   margin: 0 auto;
   height: 100vh;
+}
+.css-1phm5l1-MuiTypography-root {
+  padding: 0.5rem !important;
 }
 
 #contact img {
@@ -177,6 +180,31 @@ p {
   padding-left: 6vw;
   align-items: center;
 }
+.git-icon,
+.fb-icon,
+.linkedin-icon {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+.git-icon {
+  animation-delay: 0.6s;
+}
+.linkedin-icon {
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 footer {
   margin-top: 5%;
   text-align: center;

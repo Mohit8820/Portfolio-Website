@@ -31,7 +31,7 @@ function About() {
           variant="contained"
           size="large"
           onClick={() => {
-            window.open("/Mohit Resume(1).pdf");
+            window.open("/Resume New v2.pdf");
             return true;
           }}
         >

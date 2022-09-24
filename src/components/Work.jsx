@@ -23,6 +23,12 @@ const images = [
     width: "32%",
     link: "https://hitmo-todo-list.herokuapp.com/",
   },
+  {
+    url: "/images/queryExchange.webp",
+    title: "Query Exchange Portal",
+    width: "32%",
+    link: "https://query-exchange-main.herokuapp.com/",
+  },
 ];
 function open(url) {
   const win = window.open(url, "_blank");
@@ -32,7 +38,7 @@ function open(url) {
 }
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
-  height: 250,
+  height: 200,
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
     height: 100,
@@ -40,7 +46,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
     "& .MuiImageBackdrop-root": {
-      opacity: 0.65,
+      opacity: 0.85,
       transition: "all 0.5s",
       borderRadius: 3,
     },
@@ -91,7 +97,7 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   top: 0,
   bottom: 0,
   backgroundColor: "#1E3A8A",
-  opacity: 0.1,
+  opacity: 0.3,
   transition: theme.transitions.create("opacity"),
 }));
 
@@ -110,40 +116,44 @@ export default function Work() {
           borderRadius: 3,
           padding: "2.5vw",
           justifyContent: "space-between",
+          gap: "1rem",
         }}
       >
-        {images.map((image) => (
-          <ImageButton
-            focusRipple
-            key={image.title}
-            style={{
-              width: image.width,
-            }}
-            onClick={() => open(image.link)}
-          >
-            <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-            <ImageBackdrop className="MuiImageBackdrop-root" />
-            <Image>
-              <Typography
-                component="span"
-                variant="subtitle1"
-                color="inherit"
-                sx={{
-                  position: "relative",
-                  p: 4,
-                  pt: 2,
-                  pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                  fontSize: "1.5rem",
-                  backgroundColor: "#1E3A8A65",
-                  borderRadius: 1,
-                  border: "4px solid #fff",
-                }}
-              >
-                {image.title}
-              </Typography>
-            </Image>
-          </ImageButton>
-        ))}
+        {images
+          .slice(0)
+          .reverse()
+          .map((image) => (
+            <ImageButton
+              focusRipple
+              key={image.title}
+              style={{
+                width: image.width,
+              }}
+              onClick={() => open(image.link)}
+            >
+              <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+              <ImageBackdrop className="MuiImageBackdrop-root" />
+              <Image>
+                <Typography
+                  component="span"
+                  variant="subtitle1"
+                  color="inherit"
+                  sx={{
+                    position: "relative",
+                    p: 4,
+                    pt: 2,
+                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                    fontSize: "1.5rem",
+                    backgroundColor: "#1E3A8A65",
+                    borderRadius: 1,
+                    border: "4px solid #fff",
+                  }}
+                >
+                  {image.title}
+                </Typography>
+              </Image>
+            </ImageButton>
+          ))}
       </Box>
     </div>
   );

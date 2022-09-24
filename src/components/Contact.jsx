@@ -15,51 +15,59 @@ function Contact() {
       <Paper elevation={8} className="cont" sx={{ m: 0, p: "5vw" }}>
         <img className="mIcon" src="/images/MohitIcon.webp" alt="logo" />
         <div>
-          <a href="https://www.facebook.com/mohit.sah.8820/">
-            <FacebookIcon
-              color="primary"
-              fontSize="large"
-              sx={{
-                width: "7vw",
-                minWidth: 40,
-                maxWidth: 70,
-                height: "auto",
-                "&:hover": {
-                  color: "#1976d290",
-                },
-              }}
-            />
-          </a>
-          <a href="https://github.com/Mohit8820">
-            <GitHubIcon
-              color="action"
-              fontSize="large"
-              sx={{
-                width: "6.5vw",
-                minWidth: 40,
-                maxWidth: 65,
-                height: "auto",
-                "&:hover": {
-                  color: "#1976d290",
-                },
-              }}
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/mohit-sah-a02130213/">
-            <LinkedInIcon
-              color="primary"
-              fontSize="large"
-              sx={{
-                width: "7vw",
-                minWidth: 40,
-                maxWidth: 70,
-                height: "auto",
-                "&:hover": {
-                  color: "#1976d290",
-                },
-              }}
-            />
-          </a>
+          <div className="float-icon-wrapper">
+            <div className="fb-icon">
+              <a href="https://www.facebook.com/mohit.sah.8820/">
+                <FacebookIcon
+                  color="primary"
+                  fontSize="large"
+                  sx={{
+                    width: "7vw",
+                    minWidth: 40,
+                    maxWidth: 70,
+                    height: "auto",
+                    "&:hover": {
+                      color: "#1976d290",
+                    },
+                  }}
+                />
+              </a>
+            </div>
+            <div className="git-icon">
+              <a href="https://github.com/Mohit8820">
+                <GitHubIcon
+                  color="action"
+                  fontSize="large"
+                  sx={{
+                    width: "6.5vw",
+                    minWidth: 40,
+                    maxWidth: 65,
+                    height: "auto",
+                    "&:hover": {
+                      color: "#1976d290",
+                    },
+                  }}
+                />
+              </a>
+            </div>
+            <div className="linkedin-icon">
+              <a href="https://www.linkedin.com/in/mohit-sah-a02130213/">
+                <LinkedInIcon
+                  color="primary"
+                  fontSize="large"
+                  sx={{
+                    width: "7vw",
+                    minWidth: 40,
+                    maxWidth: 70,
+                    height: "auto",
+                    "&:hover": {
+                      color: "#1976d290",
+                    },
+                  }}
+                />
+              </a>
+            </div>
+          </div>
 
           <br />
           <p>
